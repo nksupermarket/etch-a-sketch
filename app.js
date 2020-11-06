@@ -2,7 +2,7 @@ let blackInk = true;
 let colorInk;
 let shadeInk;
 
-const container = document.querySelector("#container");
+const container = document.querySelector("#grid");
 const gridSize = document.querySelector("#grid-size");
 
 window.onload = createGrid(16);
@@ -29,7 +29,7 @@ function createGrid(x) {
 
   const gridBoxes = document.querySelectorAll(".grid-boxes");
   gridBoxes.forEach((gridBoxes) => {
-    gridBoxes.addEventListener("mouseenter", colorChange);
+    gridBoxes.addEventListener("mouseover", colorChange);
   });
 }
 
