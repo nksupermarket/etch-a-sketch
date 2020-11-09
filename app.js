@@ -33,13 +33,14 @@ function createGrid(x) {
   });
 }
 
+function rdmNumber() {
+  return Math.floor(Math.random() * 256);
+}
+
 function colorChange() {
   if (blackInk) {
     this.style.background = "black";
   } else if (colorInk) {
-    function rdmNumber() {
-      return Math.floor(Math.random() * 256);
-    }
     this.style.background = `rgb(
               ${rdmNumber()},
               ${rdmNumber()},
@@ -84,3 +85,45 @@ colorBtn.addEventListener("click", () => {
   blackInk = false;
   colorInk = true;
 });
+
+const title = document.querySelector("h1");
+let titleStr = title.textContent;
+titleStr = titleStr.split("");
+title.textContent = "";
+
+for (i = 0; i < titleStr.length; i++) {
+  title.innerHTML += `<span>${titleStr[i]}</span>`;
+}
+
+let char = 0;
+let timer = setInterval(onTick, 50);
+
+function onTick() {
+  let titleLetters = title.querySelectorAll("span")[char];
+  titleLetters.classList.add("fade-in");
+  titleLetters.animate(
+    [
+      { color: `rgba(${rdmNumber()}, ${rdmNumber()}, ${rdmNumber()}, 1)` },
+      { color: `rgba(${rdmNumber()}, ${rdmNumber()}, ${rdmNumber()}, 1)` },
+    ],
+    {
+      duration: 200,
+      fill: "forwards",
+      iterations: 1,
+      easing: "linear",
+      direction: "alternate-reverse",
+    }
+  );
+  char++;
+
+  if (char === titleStr.length) {
+    title.classList.add("grow");
+    complete();
+    return;
+  }
+}
+
+function complete() {
+  clearInterval(timer);
+  timer = null;
+}

@@ -10,25 +10,30 @@
     />
   </head>
   <body>
-    <div id="navbar">
-      <h1>etch-a-sketch</h1>
+    <div id="title-pg">
+      <h1 id="title">etch-a-sketch</h1>
     </div>
-    <div id="btn-container">
-      <label for="grid-size">Grid size</label>
-      <input
-        type="number"
-        id="grid-size"
-        name="grid-size"
-        min="1"
-        max="100"
-        value="16"
-      />
-      <div id="black-btn" class="btn">Black</div>
-      <div id="shade-btn" class="btn">Shade</div>
-      <div id="color-btn" class="btn">Color</div>
-      <div id="clear-btn" class="btn">Clear</div>
-    </div>
-    <div id="grid"></div>
+    <main>
+      <div id="navbar">
+        <h1>etch-a-sketch</h1>
+      </div>
+      <div id="btn-container">
+        <label for="grid-size">Grid size</label>
+        <input
+          type="number"
+          id="grid-size"
+          name="grid-size"
+          min="1"
+          max="100"
+          value="16"
+        />
+        <div id="black-btn" class="btn">Black</div>
+        <div id="shade-btn" class="btn">Shade</div>
+        <div id="color-btn" class="btn">Color</div>
+        <div id="clear-btn" class="btn">Clear</div>
+      </div>
+      <div id="grid"></div>
+    </main>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
