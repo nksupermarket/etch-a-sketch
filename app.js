@@ -121,7 +121,9 @@ function onTick() {
     const titlePg = document.querySelector("#title-pg");
     title.onanimationend = () => {
       titlePg.classList.add("shrink");
-      title.classList.add("shrink");
+      setTimeout(function () {
+        title.classList.add("shrink");
+      }, 300);
     };
     complete();
     return;
