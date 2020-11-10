@@ -109,7 +109,7 @@ function onTick() {
     {
       duration: 200,
       fill: "forwards",
-      iterations: 1,
+      iterations: 2,
       easing: "linear",
       direction: "alternate-reverse",
     }
@@ -118,6 +118,11 @@ function onTick() {
 
   if (char === titleStr.length) {
     title.classList.add("grow");
+    const titlePg = document.querySelector("#title-pg");
+    title.onanimationend = () => {
+      titlePg.classList.add("shrink");
+      title.classList.add("shrink");
+    };
     complete();
     return;
   }
