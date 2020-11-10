@@ -120,4 +120,5 @@ textarea {
 .grid-boxes {
   background: white;
   border: 0.2px dotted rgb(200, 200, 200);
+  border-radius: 3px;
 }
