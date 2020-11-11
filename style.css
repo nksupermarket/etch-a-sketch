@@ -166,3 +166,10 @@ textarea {
     margin-right: 25px;
   }
 }
+
+@media screen and (max-height: 840px) {
+  #title.shrink {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
