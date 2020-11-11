@@ -16,6 +16,8 @@ body {
   );
 }
 main {
+  box-sizing: border-box;
+  border: 20px solid white;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
@@ -34,7 +36,7 @@ main {
     rgba(255, 255, 255, 1) 0%,
     rgba(240, 240, 240, 1) 100%
   );
-  transition: all 1000ms ease-in-out;
+  transition: all 600ms linear;
 }
 #title-pg.shrink {
   height: 0;
@@ -77,10 +79,10 @@ main {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(150px);
+    transform: translateY(170px);
   }
   100% {
-    transform: translateY(100px);
+    transform: translateY(120px);
   }
 }
 #btn-container {
@@ -90,7 +92,6 @@ main {
   align-items: flex-end;
 }
 
-#grid-input,
 .btn {
   margin-bottom: 25px;
 }
@@ -99,17 +100,16 @@ main {
   padding: 0.8em 0.9em;
   border-radius: 0.5em;
   color: white;
-  background-color: tomato;
-  /*box-shadow: inset 0 -0.6em 0 -0.35em #99ff3f;*/
+  background-color: #fc8eac;
   height: 3em;
   width: 100px;
   text-align: center;
-  transition: all 500ms ease-out;
+  transition: all 300ms ease-out;
 }
 .btn:hover {
   cursor: pointer;
-  background: #ff745b;
-  box-shadow: 0 0 0 3px rgb(250, 255, 103), 0 0 0px 5px #ff745b;
+  box-shadow: 8px 8px 0 0 white;
+  transform: translate(-8px, -8px);
 }
 .btn:active {
   filter: brightness(0.9);
@@ -119,6 +119,8 @@ main {
   border-radius: 20px 0.5em 0.5em 20px;
   padding-left: 20px;
   color: white;
+  box-shadow: 10px 10px 0 0 white;
+  margin-bottom: 35px;
 }
 input[type="number"] {
   color: #464646;

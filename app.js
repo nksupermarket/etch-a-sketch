@@ -123,7 +123,7 @@ function onTick() {
       titlePg.classList.add("shrink");
       setTimeout(function () {
         title.classList.add("shrink");
-      }, 300);
+      }, 200);
     };
     complete();
     return;
