@@ -110,8 +110,7 @@ main {
   cursor: pointer;
   box-shadow: 8px 8px 0 0 white;
   transform: translate(-8px, -8px);
-  background-color: #ffe16e;
-  color: #646464;
+  background-color: #fc8eac;
 }
 .btn:active {
   filter: brightness(0.9);
