@@ -9,11 +9,7 @@ body {
 body {
   background: rgb(250, 255, 103);
   font-family: lato, arial, sans-serif;
-  background: radial-gradient(
-    circle,
-    rgb(255, 254, 167) 0%,
-    rgb(255, 117, 143) 100%
-  );
+  background: radial-gradient(circle, #fbda61 0%, #ff5acd 100%);
 }
 main {
   box-sizing: border-box;
