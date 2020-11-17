@@ -7,9 +7,9 @@ body {
   color: #464646;
 }
 body {
-  background: rgb(250, 255, 103);
+  background: #ddd6f3;
   font-family: lato, arial, sans-serif;
-  background: radial-gradient(circle, #fbda61 0%, #ff5acd 100%);
+  background: radial-gradient(circle, #faaca8 0%, #ddd6f3 100%);
 }
 main {
   box-sizing: border-box;
