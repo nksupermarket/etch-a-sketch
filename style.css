@@ -9,7 +9,7 @@ body {
 body {
   background: #ddd6f3;
   font-family: lato, arial, sans-serif;
-  background: radial-gradient(circle, #faaca8 0%, #ddd6f3 100%);
+  background: radial-gradient(circle, #ffd3d0 0%, #ddd6f3 100%);
 }
 main {
   box-sizing: border-box;
