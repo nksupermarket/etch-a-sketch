@@ -96,7 +96,7 @@ main {
   padding: 0.8em 0.9em;
   border-radius: 0.5em;
   color: white;
-  background-color: #8c8c8c;
+  background-color: #b69f9e;
   height: 3em;
   width: 100px;
   text-align: center;
@@ -104,20 +104,44 @@ main {
 }
 .btn:hover {
   cursor: pointer;
-  box-shadow: 8px 8px 0 0 white;
-  transform: translate(-8px, -8px);
-  background-color: #fc8eac;
+  transform: translate(-4px, -4px);
+  background-color: #b9b2d1;
 }
 .btn:active {
   filter: brightness(0.9);
 }
 #grid-input {
-  background: #4787ff;
+  display: flex;
+  align-items: center;
+  background: rgba(71, 136, 255, 0.8);
   border-radius: 20px 0.5em 0.5em 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   color: white;
-  box-shadow: 10px 10px 0 0 white;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+}
+#grid-input:hover {
+  background: rgba(71, 136, 255, 1);
+}
+label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f053";
+  font-weight: 900;
+  visibility: visible;
+}
+label {
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  width: 0;
+}
+#grid-input:hover #grid-label {
+  visibility: visible;
+  margin-left: 5px;
+  width: 50%;
+}
+
+#grid-input:hover #grid-label::before {
+  content: "";
 }
 input[type="number"] {
   color: #464646;
@@ -162,7 +186,7 @@ textarea {
     margin-right: 25px;
   }
   #grid-input {
-    margin-right: 35px;
+    margin-right: 25px;
   }
 }
 
